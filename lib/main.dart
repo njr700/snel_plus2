@@ -7,7 +7,7 @@ import 'package:snel_plus_2/frontend/pages/admin/connexion.dart';
 import 'package:snel_plus_2/frontend/controllers/MenuAppController.dart';
 
 void main() async {
-
+  WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );

@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'backend/firebase/firebase_options.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:snel_plus_2/frontend/pages/admin/connexion.dart';
+import 'package:snel_plus_2/frontend/pages/splash.dart';
+//import 'package:snel_plus_2/frontend/pages/admin/connexion.dart';
 //import 'package:snel_plus_2/frontend/components/colors/colors.dart';
 import 'package:snel_plus_2/frontend/controllers/MenuAppController.dart';
 
@@ -33,7 +34,7 @@ class MyApp extends StatelessWidget {
             create: (context) => MenuAppController(),
           ),
         ],
-        child: const Connexion(),
+        child: const Splash(),
       ),
     );
   }

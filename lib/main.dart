@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
       title: 'Snel + Desktop',
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        brightness: Brightness.dark
       ),
       home: MultiProvider(
         providers: [

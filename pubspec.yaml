@@ -42,9 +42,11 @@ dependencies:
 
   #Image
   flutter_svg: ^2.0.10+1
+  flutter_svg_provider: ^1.0.7
 
   #Google
   google_fonts: ^6.2.1
+  google_sign_in: ^6.2.1
 
   #Firebase
   firebase_auth: ^5.1.0

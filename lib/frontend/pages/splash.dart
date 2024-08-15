@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:snel_plus_2/frontend/pages/admin/connexion.dart';
 import 'package:snel_plus_2/frontend/components/colors/colors.dart';
 
@@ -35,7 +36,8 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
       backgroundColor: bleu,
       body: Center(
         child: Image(
-          image: AssetImage('assets/images/Snel.jpg'),
+          height: 1060,
+          image: Svg('assets/images/Snel.svg'),
         ),
       ),
     );

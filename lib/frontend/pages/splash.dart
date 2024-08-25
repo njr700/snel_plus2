@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
-import 'package:snel_plus_2/frontend/pages/admin/connexion.dart';
-import 'package:snel_plus_2/frontend/components/colors/colors.dart';
+
+import '../components/colors/colors.dart';
+import 'admin/connexion.dart';
+import 'agent/connexion.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -16,9 +18,9 @@ class _SplashState extends State<Splash> with SingleTickerProviderStateMixin {
   void initState(){
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
-    Future.delayed(const Duration(seconds: 20),() {
+    Future.delayed(const Duration(seconds: 2),() {
       Navigator.of(context).pushReplacement(MaterialPageRoute(
-        builder: (_) => const Connexion(),
+        builder: (_) =>  Connexion(),
       ));
     });
   }
